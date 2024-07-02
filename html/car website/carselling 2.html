@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Auto Verkoop</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 1em;
+            text-align: center;
+        }
+
+        section {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            margin: 20px;
+        }
+
+        .car {
+            width: 300px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            padding: 10px;
+            margin: 10px;
+            background-color: #fff;
+        }
+
+        .add-to-cart {
+            background-color: #4CAF50;
+            color: #fff;
+            border: none;
+            padding: 8px 16px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 14px;
+            margin-top: 10px;
+            cursor: pointer;
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            padding: 1em;
+            text-align: center;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Welkom bij Auto Verkoop</h1>
+        <p>De beste deals voor jouw nieuwe auto!</p>
+    </header>
+
+    <section>
+        <div class="car">
+            <h2>Porche 911 G2RS</h2>
+            <p><strong>Merk:</strong> Porsche</p>
+            <p><strong>Bouwjaar:</strong> 2022</p>
+            <p><strong>Kilometerstand:</strong> 12.000 km</p>
+            <p><strong>Prijs:</strong> €137.000</p>
+            <button class="add-to-cart" onclick="addToCart('Auto Model 1', '€XXXXX')">Voeg toe aan winkelmandje</button>
+        </div>
+
+        <div class="car">
+            <h2>BMW M4</h2>
+            <p><strong>Merk:</strong> BMW</p>
+            <p><strong>Bouwjaar:</strong> 2004</p>
+            <p><strong>Kilometerstand:</strong> 157.000 km</p>
+            <p><strong>Prijs:</strong> €4.400,99</p>
+            <button class="add-to-cart" onclick="addToCart('Auto Model 2', '€XXXXX')">Voeg toe aan winkelmandje</button>
+        </div>
+		
+		 <div class="car">
+            <h2>Fort Fusion</h2>
+            <p><strong>Merk:</strong> Fort</p>
+            <p><strong>Bouwjaar:</strong> 2012</p>
+            <p><strong>Kilometerstand:</strong> 43.000 km</p>
+            <p><strong>Prijs:</strong> €23.000</p>
+            <button class="add-to-cart" onclick="addToCart('Auto Model 2', '€XXXXX')">Voeg toe aan winkelmandje</button>
+        </div>
+		
+        <!-- Voeg meer auto's toe met dezelfde structuur -->
+    </section>
+
+    <footer>
+        <p>&copy; 2023 Auto Verkoop</p>
+    </footer>
+
+    <script>
+        function addToCart(model, price) {
+            alert('Auto ' + model + ' is toegevoegd aan het winkelmandje!\nPrijs: ' + price);
+            // Hier kun je de logica toevoegen om het geselecteerde item aan het winkelmandje toe te voegen
+        }
+    </script>
+
+</body>
+</html>

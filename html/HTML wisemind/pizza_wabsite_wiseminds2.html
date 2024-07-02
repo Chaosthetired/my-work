@@ -1,0 +1,110 @@
+<html lang="en">
+<head>
+<link rel="stylesheet" type="text/css" href="styles.css">
+  <title>Pizza Margherita</title>
+</head>
+<body style="background-image: url('Pizza.png');">
+    <header>
+	    <h1>
+        <img src="logo.png" alt="Ali's Auto's BV Logo" class="logo">
+        </h1>
+        <nav>
+            <a href="home.html">Home</a>
+            <a href="sales.html">Sales</a>
+        </nav>
+    </header>
+<head>
+    <link rel="stylesheet" href="styles.css">
+    <h2>pizza's</h2>
+  <div class="setContainer">
+    <img class="setImg" src="pizza's_afbeeldings/Pizza_polo.avif" alt="Set 1 Image">
+    <div class="setText">Pizza polo</div>
+    <div class="numberDisplay" id="numberDisplay1">0</div>
+    <button onclick="incrementNumber(1)">+ 1</button>
+    <button onclick="decrementNumber(1)">- 1</button>
+  </div>
+
+  <div class="setContainer">
+    <img class="setImg" src="pizza's_afbeeldings/Pizza_BBQ_hot.jpg" alt="Set 1 Image">
+    <div class="setText">Pizza BBQ</div>
+    <div class="numberDisplay" id="numberDisplay2">0</div>
+    <button onclick="incrementNumber(2)">+ 1</button>
+    <button onclick="decrementNumber(2)">- 1</button>
+  </div>
+  
+    <div>
+    <div class="numberDisplay" id="numberDisplay3">0</div>
+    <button onclick="incrementNumber(3)">+ 1</button>
+    <button onclick="decrementNumber(3)">- 1</button>
+  </div>
+  
+    <div>
+    <div class="numberDisplay" id="numberDisplay4">0</div>
+    <button onclick="incrementNumber(4)">+ 1</button>
+    <button onclick="decrementNumber(4)">- 1</button>
+  </div>
+  
+    <div>
+    <div class="numberDisplay" id="numberDisplay5">0</div>
+    <button onclick="incrementNumber(5)">+ 1</button>
+    <button onclick="decrementNumber(5)">- 1</button>
+  </div>
+  
+    <div>
+    <div class="numberDisplay" id="numberDisplay6">0</div>
+    <button onclick="incrementNumber(6)">+ 1</button>
+    <button onclick="decrementNumber(6)">- 1</button>
+  </div>
+  
+    <div>
+    <div class="numberDisplay" id="numberDisplay7">0</div>
+    <button onclick="incrementNumber(7)">+ 1</button>
+    <button onclick="decrementNumber(7)">- 1</button>
+  </div>
+  
+    <div>
+    <div class="numberDisplay" id="numberDisplay8">0</div>
+    <button onclick="incrementNumber(8)">+ 1</button>
+    <button onclick="decrementNumber(8)">- 1</button>
+  </div>
+  
+    <div>
+    <div class="numberDisplay" id="numberDisplay9">0</div>
+    <button onclick="incrementNumber(9)">+ 1</button>
+    <button onclick="decrementNumber(9)">- 1</button>
+  </div>
+  
+  <div>
+    <div class="numberDisplay" id="numberDisplay10">0</div>
+    <button onclick="incrementNumber(10)">+ 1</button>
+    <button onclick="decrementNumber(10)">- 1</button>
+  </div>
+
+  <script>
+    const numberDisplays = {};
+    let currentNumbers = {};
+
+    // Initialize numberDisplays and currentNumbers for each set
+    for (let i = 1; i <= 10; i++) {
+      numberDisplays[i] = document.getElementById(`numberDisplay${i}`);
+      currentNumbers[i] = 0;
+    }
+
+    function incrementNumber(setNumber) {
+      currentNumbers[setNumber]++;
+      updateNumberDisplay(setNumber);
+    }
+
+    function decrementNumber(setNumber) {
+      currentNumbers[setNumber]--;
+      updateNumberDisplay(setNumber);
+    }
+
+    function updateNumberDisplay(setNumber) {
+      numberDisplays[setNumber].textContent = currentNumbers[setNumber];
+    }
+  </script>
+</html>
+
+</body>
+</html>
