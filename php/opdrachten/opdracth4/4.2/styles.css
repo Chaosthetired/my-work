@@ -1,0 +1,36 @@
+td {
+    padding: 10px; 
+	border-bottom: 0.5px solid black;
+	border-color: black;
+}
+
+th {
+    padding: 5px; 
+	border-bottom: 0.5px solid black;
+	border-color: black;
+}
+
+table {
+	border: solid black 1px;
+    border-spacing: 15px; 
+    width: 40%;
+	border-color: black;
+}
+
+.alert-info {
+  background-color: #d9edf7;
+  border-color: #bce8f1;
+  color: #31708f;
+}
+
+.alert-success {
+  background-color: #dff0d8;
+  border-color: #d6e9c6;
+  color: #3c763d;
+}
+
+.alert-danger {
+  background-color: #f2dede;
+  border-color: #ebccd1;
+  color: #a94442;
+}
