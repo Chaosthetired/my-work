@@ -1,0 +1,10 @@
+### Opdracht 2-3
+### Beslissing nemen met Python
+print("Hallo, dit is de Pi!")
+naam = input("Wat is je naam? ")
+leeftijd = int(input("Wat is je leeftijd? "))
+print("Mijn naam is", naam, "en mijn leeftijd is", leeftijd, "jaar.")
+if leeftijd < 25:
+  print("Pi denkt dat je een student bent!")
+else:
+  print("Pi denkt dat je een docent bent!")

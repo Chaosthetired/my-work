@@ -1,0 +1,16 @@
+### opdracht 2.6
+### illias bourjila
+i = 0
+som = 0
+while i < 8:
+    getal = int(input("geef een getal"))
+    som = som + getal
+    i = i + 1
+print ("de som is",som)
+GEM = som/i
+print("gemmiddle is",GEM,)
+
+
+
+
+

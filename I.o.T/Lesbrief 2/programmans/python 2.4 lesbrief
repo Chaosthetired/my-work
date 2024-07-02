@@ -1,0 +1,12 @@
+print ("hallo what is jou leeftijd en naam")
+age1 = int(20)
+name1 = "robbert"
+print ("hallo mijn naam is", name1,"en mijn leeftijd is", age1,)
+print ("en jij?")
+leeftijd = int(input("what is leeftijd ="))
+name2 = input("en je naam")
+print("hallo mijn leeftijd is", leeftijd,"en mijn naam is", name2,)
+if age1 > leeftijd:
+    print (name1, "jij bent ouder dan", name2,)
+else:
+    print(name2,"jij bent ouder dan", name1,)

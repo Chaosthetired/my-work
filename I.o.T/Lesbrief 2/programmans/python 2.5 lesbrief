@@ -1,0 +1,9 @@
+### opdracht 2.5
+### illias bourjila
+i = 0
+som = 0
+while i < 5:
+    getal = int(input("geef een getal"))
+    som = som + getal
+    i = i + 1
+print ("de som is",som)
